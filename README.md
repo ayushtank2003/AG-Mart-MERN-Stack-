@@ -1,15 +1,15 @@
 Lens Mart is an e-commerce platform where users can browse and purchase a variety of lenses tailored to their needs. 
 The app offers specialized categories such as trending, sports, and fashionable lenses, providing users with a seamless shopping experience.
 
- Table of Contents
-. Features
-. Technologies Used
-. Installation
-. Usage
-. Project Structure
-. Contributing
-. License
-. Contact
+Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 Features
 . Diverse Categories: Explore lenses across various categories like:
