@@ -37,42 +37,42 @@ Lens Mart is an e-commerce platform where users can browse and purchase a variet
 
 To set up Lens Mart locally:
 
-1. **Clone the repository**:
+1. Clone the repository**:
 
    ```bash
    git clone https://github.com/ayushtank2003/Lens-Mart-MERN-Stack.git
 
 
-2. **Navigate to the project directory**:
+2. Navigate to the project directory**:
 
    ```bash
    cd Lens-Mart-MERN-Stack
 
-3. **Install server dependencies:
+3. Install server dependencies:
     ```bash
     npm install
 
-4. **Navigate to the client directory and install dependencies:
+4. Navigate to the client directory and install dependencies:
     ```bash
     cd client
     npm install
 
-5. **Set up environment variables: Create a .env file in the root directory and add the following:
+5. Set up environment variables: Create a .env file in the root directory and add the following:
     ```env
     MONGO_URI=your_mongodb_connection_string
     JWT_SECRET=your_secret_key
 
-6. **Start the application:
-  . **Backend:
+6. Start the application:
+  . Backend:
       ```bash
       npm run dev
       
-  . **Frontend:
+  . Frontend:
       ```bash
       cd client
       npm start
 
-7. **Access the app at http://localhost:3000.
+7. Access the app at http://localhost:3000.
 
 ## Project Structure
  
@@ -89,13 +89,13 @@ Lens-Mart-MERN-Stack/
 ├── package.json      # Project dependencies
 └── README.md         # Documentation
 
-##Contributing
+## Contributing
 Contributions are welcome! Please fork the repository, create a branch, and submit a pull request.
 
-##License
+## License
 This project is licensed under the MIT License
 
-##Contact
+## Contact
 For inquiries or feedback, reach out:
 
 . **Name: Ayush Kumar Tank
