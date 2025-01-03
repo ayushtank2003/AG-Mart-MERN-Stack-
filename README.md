@@ -63,11 +63,11 @@ To set up Lens Mart locally:
     JWT_SECRET=your_secret_key
 
 6. Start the application:
-  . Backend:
+   - Backend:
       ```bash
       npm run dev
       
-  . Frontend:
+  - Frontend:
       ```bash
       cd client
       npm start
