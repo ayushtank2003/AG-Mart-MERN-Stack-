@@ -75,7 +75,17 @@ To set up Lens Mart locally:
 7. Access the app at http://localhost:3000.
 
 ## Project Structure
-Lens-Mart-MERN-Stack/ ├── client/ # React frontend ├── server/ # Express backend ├── models/ # Mongoose models ├── routes/ # Express routes ├── controllers/ # Business logic ├── middleware/ # Custom middleware ├── config/ # Configuration files ├── .env # Environment variables ├── package.json # Project dependencies └── README.md # Documentation
+- Lens-Mart-MERN-Stack/
+- ├── client/ # React frontend
+- ├── server/ # Express backend
+- ├── models/ # Mongoose models
+- ├── routes/ # Express routes
+- ├── controllers/ # Business logic
+- ├── middleware/ # Custom middleware
+- ├── config/ # Configuration files
+- ├── .env # Environment variables
+- ├── package.json # Project dependencies
+- └── README.md # Documentation
 
 ## Contributing
 Contributions are welcome! Please fork the repository, create a branch, and submit a pull request.
@@ -85,6 +95,5 @@ This project is licensed under the MIT License
 
 ## Contact
 For inquiries or feedback, reach out:
-
-. ** Name: Ayush Kumar Tank
-. ** Linkedin :-https://www.linkedin.com/in/ayush-kumar-tank/
+-  Name: Ayush Kumar Tank
+-  Linkedin :-https://www.linkedin.com/in/ayush-kumar-tank/
