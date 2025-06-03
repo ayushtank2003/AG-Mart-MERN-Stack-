@@ -1,3 +1,4 @@
+// ✅ Modified: Removed unused `updateAddress`
 import { useProductsContext } from "../../contexts";
 
 const AddressCard = ({
@@ -9,8 +10,8 @@ const AddressCard = ({
   setShowAddressForm,
 }) => {
   const { id, fullname, mobile, flat, area, city, pincode } = address;
-  const { currentAddress, setCurrentAddress, updateAddress, deleteAddress } =
-    useProductsContext();
+  const { currentAddress, setCurrentAddress, deleteAddress } = useProductsContext();
+
   return (
     <label
       className={`flex ${
@@ -21,7 +22,6 @@ const AddressCard = ({
         <input
           type="radio"
           name="address"
-          id=""
           className="accent-current me-2"
           checked={id === currentAddress.id}
           onChange={() => setCurrentAddress(address)}
