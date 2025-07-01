@@ -1,3 +1,4 @@
+// ✅ Modified: Completed the useEffect dependency array
 import { CiSearch } from "react-icons/ci";
 import { filterBySearch } from "../../utils/filterUtils";
 import { useProductsContext } from "../../contexts";
@@ -5,6 +6,7 @@ import { useEffect, useState } from "react";
 import CartItemCard from "../cart/CartItemCard";
 import { useLocation, useNavigate } from "react-router-dom";
 import spinningLoaders from "../../assets/loaderBlack.svg";
+
 const Search = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -19,11 +21,11 @@ const Search = () => {
     if (location?.pathname !== "/products") {
       setSearch("");
     }
-  }, [location]);
+  }, [location.pathname]); // ✅ FIXED
+
   useEffect(() => {
     setSearching(true);
-    let id;
-    id = setTimeout(() => {
+    const id = setTimeout(() => {
       setFilteredData(filterBySearch(search, allProducts));
       setSearching(false);
       if (location?.pathname === "/products" && !search) {
@@ -31,15 +33,14 @@ const Search = () => {
       }
     }, 500);
 
-    return () => {
-      clearTimeout(id);
-    };
-  }, [search]);
+    return () => clearTimeout(id);
+  }, [search, allProducts, applyFilters, location.pathname]); // ✅ FIXED
 
   const changeHandler = (e) => {
     setSearch(e.target.value);
     if (!showList) setShowList(true);
   };
+
   const submitHandler = (e) => {
     e.preventDefault();
     applyFilters("searchText", search);
@@ -72,7 +73,7 @@ const Search = () => {
             </li>
           ) : filteredData.length ? (
             filteredData.map((product) => (
-              <li key={product._id} className="">
+              <li key={product._id}>
                 <CartItemCard
                   product={product}
                   isSearch={true}
